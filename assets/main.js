@@ -188,7 +188,7 @@ function actionForm (){
 }
 
 function perubahanTextSpan(){
-    const isCompleteBook = document.getElementById('inputDataBukuIsComplete');
+    const isCompleteBook = document.getElementById('inputDataBukuSudahSelesai');
     if (isCompleteBook.checked == true) {
         document.querySelector('span').innerText = 'Selesai Dibaca'
     } else {
