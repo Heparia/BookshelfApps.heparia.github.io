@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="headerWebsite">
+    <h1 class="JudulWebsite headerLeft" id="headLeft">Bookshelf Apps</h1>
+    <nav class="headerLeft">
+      <ul>
+        <li><a href="#Belum">Belum Dibaca</a></li>
+        <li><a href="#Sudah">Sudah Dibaca</a></li>
+      </ul>
+    </nav>
+  
+    <div id="bagianPencarian">
+      <form id="cariBuku">
+        <label>
+        <select id="pilihanPencarian" onchange="setJenisInput()">
+          <option value="title" selected class="opsiPencarian">Judul</option>
+          <option value="author" class="opsiPencarian">Penulis</option>
+        </select>
+        </label>
+        <div id="inputPencarian">
+        <input id="inputKataKunciPencarian" type="text" onkeyup="searching()">
+        </div>
+        <button id="submitKataKunciPencarian" type="submit">Cari</button>
+      </form>
+    </div>
+    </div>
+  </div>
+
+  <div class="gambar">
+    <figure>
+      <img src="assets/gambar/background.png" alt="Gambar Rak Buku" title="Gambar Rak Buku">
+    </figure>
+  </div>
+  
+</header>
+<main>
+
+  <section class="bagianInput">
+    <h2>Masukkan Data Buku Baru</h2>
+    <form id="inputDataBuku">
+        Judul<br><input id="inputDataBukuJudul" class='inputData' type="text" required><br>
+        Penulis<br><input id="inputDataBukuPenulis" class='inputData' type="text" required><br>
+        Tahun<br><input id="inputDataBukuTahun" class='inputData' type="number" required><br>
+        Status Selesai Dibaca <input id="inputDataBukuSudahSelesai" type="checkbox" onclick="perubahanTextSpan()"><br><br>
+      <button id="kirimDataBuku" type="submit">Masukkan Buku ke Rak <span>Belum Selesai Dibaca</span></button>
+    </form>
+  </section>
+  
+  <section class="rakBuku" id="Belum">
+    <div class="kepalaRakBuku">
+    <h2>Belum Selesai Dibaca</h2>
+    <div class="urutkanMenurut">
+      <label>Urutkan Menurut</label>
+      <select class="selectMenurut" id="selectBukuBelumSelesaiDibaca" onchange="urutanBukuBelumSelesai()">
+        <option value="Terbaru" selected>Terbaru</option>
+        <option value="Terlama">Terlama</option>
+      </select>
+    </div>
+    </div>
+    <div id="listBukuBelumSelesai" class="listBuku">
+    </div>
+  </section>
+  
+  <section class="rakBuku" id="Sudah">
+    <div class="kepalaRakBuku">
+    <h2>Selesai Dibaca</h2>
+    <div class="urutkanMenurut">
+      <label>Urutkan Menurut</label>
+      <select class="selectMenurut" id="selectBukuSelesaiDibaca" onchange="urutanBukuSelesai()">
+        <option value="Terbaru" selected>Terbaru</option>
+        <option value="Terlama">Terlama</option>
+      </select>
+    </div>
+    </div>
+    <div id="listBukuSelesai" class="listBuku">
+    </div>
+  </section>
+</main>
+<footer>
+  <h4>Heparia Arum Ndaru Ramdhani &#169; 2023</h4>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

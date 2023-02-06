@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Koulen&display=swap');
+
+@media only screen and (max-width: 2000px) {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Comic Neue';
+    background-color: #DAE1E7;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.bagianInput {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #00909E;
+}
+
+.bagianInput > h2 {
+    padding-top: 4%;
+    text-align: center;
+    color: #DAE1E7;
+}
+
+.bagianInput > form {
+    margin: 8px 0;
+    color: #DAE1E7;
+    padding: 2%;
+}
+
+.bagianInput > form > button {
+    background-color: #27496D;
+    color: #DAE1E7;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.bagianInput > form > button:hover{
+    background-color: #142850
+}
+
+.bagianInput > form > button > span {
+    font-weight: bold;
+}
+
+.bagianInput > form > input[type='text'], .bagianInput > form > input[type='number'] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bagianInput > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.bagianInput > form > .input_inline > label {
+    color: #DAE1E7;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rakBuku {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.rakBuku > .listBuku {
+    padding: 16px;
+}
+
+.rakBuku > .listBuku > .buku {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.rakBuku > .listBuku > .buku > h3, p {
+    margin: 8px 0;
+}
+
+.rakBuku > .listBuku > .buku > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.header {
+    flex-basis: 50%;
+}
+.id {
+    text-align: right;
+}
+.headerWebsite {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #DAE1E7;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    color: #00909E;
+    box-shadow: 1px 9px 14px 0px rgba(0,144,158,0.41);
+    -webkit-box-shadow: 1px 9px 14px 0px rgba(0,144,158,0.41);
+    -moz-box-shadow: 1px 9px 14px 0px rgba(0,144,158,0.41);
+}
+.headerLeft {
+    text-align: center;
+    padding: auto;
+}
+#headLeft {
+    flex-basis: 20%;
+    margin: auto 0 auto;
+}
+nav{
+    flex-basis: 20%;
+    margin: auto auto auto 0;
+    padding: 0;
+}
+button{
+    background-color: #00909E;
+    color: #DAE1E7;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li {
+    text-decoration: none;
+    flex-basis: 50%;
+    padding: 0;
+}
+#bagianPencarian {
+    max-width: fit-content;
+    flex-basis: 60%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#bagianPencarian > h2 {
+    color: #00909E;
+}
+a{
+    text-decoration: none;
+    color: #142850;
+    margin: auto 0;
+}
+a:hover{
+    border-bottom: 2px solid #00909E;
+    color: #00909E;
+    padding: 10%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#bagianPencarian > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+#bagianPencarian > form > label {
+    display: flex;
+    align-items: center;
+}
+
+#bagianPencarian > form > div> input, #bagianPencarian > form > div {
+    padding-left: 5px;
+    border-radius: 5px;
+    align-items: center;
+    margin: auto;
+    height: 40px;
+    font-size: 20px;
+}
+
+#bagianPencarian > form > button {
+    color: #DAE1E7;
+    background-color: #00909E;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10%;
+    width: auto;
+    max-height: 40px;
+}
+
+.editBuku {
+    margin-top: 10px;
+    padding: 2%;
+    border-radius: 10px;
+}
+.editBuku >h2{
+    text-align: center;
+}
+.editBuku>h2>strong {
+    font-size: medium;
+    margin-top: 0;
+}
+.editBuku>form>div>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+.sudahDibaca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sudahDibaca>label {
+    margin-right: 10px;
+}
+.sudahDibaca>select{
+    padding-left: 0;
+    margin-left: 0;
+    background-color: #DAE1E7;
+    border-radius: 5px;
+    font-family: 'Comic Neue';
+}
+.opsiPilihanSelesaiAtauBelum:hover, .opsiPilihanSelesaiAtauBelum:focus{
+    background-color: #142850;
+}
+.simpanBatal {
+    border: none;
+    background-color: #27496D;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#simpanBatal {
+    display: flex;
+    flex-direction: row-reverse;
+}
+button:hover{
+    transform: scale(1.1);
+}
+footer>h4 {
+    text-align: center;
+    color: #DAE1E7;
+    background-color: #00909E;
+    padding: 1%;
+}
+.kepalaRakBuku{
+    display: flex;
+    flex-direction: row;
+}
+.selectMenurut{
+    background-color: #00909E;
+    font-family: 'Comic Neue';
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #00909E;
+    color: #DAE1E7;
+}
+.urutkanMenurut{
+    text-align: right;
+}
+.kepalaRakBuku>h2, .kepalaRakBuku>.urutkanMenurut{
+    flex-basis: 50%;
+}
+.rakBuku>.kepalaRakBuku > h2 {
+    color: #00909E;
+}
+#pilihanPencarian{
+    background-color: transparent;
+    border: none;
+    font-family: 'Comic Neue';
+    font-size: medium;
+}
+.opsiPencarian{
+    background-color: #27496D;
+    color: #DAE1E7;
+}
+.dataYangCocok {
+    font-size: small;
+    color: #142850;
+    max-height: 100%;
+    width: 150px;
+}
+.dataDiv {
+    background-color: #d4dae5;
+    padding: 5%;
+    position: sticky;
+    border-radius: 5px;
+    border-bottom: 2px solid #00909E;
+    border-right: 2px solid #00909E;
+}
+.dataDiv>p>a:hover{
+    transform: scale(0.7);
+    background-color: #DAE1E7;
+    color: #142850;
+    border-bottom: 2px solid #00909E;
+    border-right: 2px solid #00909E;
+    border-radius: 5px;
+    text-align: left;
+    padding: 3%;
+}
+.dataDiv>p{
+    text-align: center;
+}
+.gambar>figure>img {
+    width: 100%;
+    margin: auto;
+}}
+@media only screen and (max-width : 1024px) {
+.JudulWebsite{
+    flex-basis: 50%;
+    font-size: 200%;
+}
+header>div>nav>ul>li>a{
+    font-size: 15px
+}
+header>div>nav>ul>li{
+    margin: 10%;
+}
+header>div>nav{
+    flex-basis: 15%;
+}
+}
+@media only screen and (max-width:790px){
+.headerWebsite{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+header>div>nav>ul>li{
+    margin: 5%;}
+header>div>nav>ul>li>a{
+    color: #DAE1E7;
+}
+header>div>nav>ul{
+    background-color: #00909E;
+    border-radius: 5px;
+}
+header>div>nav>ul>li>a:hover{
+    color: #DAE1E7;
+}
+header>div>nav{
+    margin: auto;
+    width: 40%;
+    margin: 2%;
+}
+.JudulWebsite{
+    font-size: 350%;
+}
+}
+@media only screen and (max-width : 490px){
+    .JudulWebsite{
+        font-size: 250%;
+    }
+    header>div>nav>ul{
+        background-color: transparent;
+        color: #142850;
+    }
+    header>div>nav>ul>li>a{
+        color: #142850;
+    }
+    header>div>nav{
+        margin: auto;
+        width: 80%;
+        margin: 0;
+    }
+    header>div>nav>ul>li>a:hover{
+        color: #00909E;
+    }
+    header>div>form>input{
+        margin: 0;
+        padding: 0;
+    }
+    .head{
+        flex-direction: column;
+    }
+    .header{
+        text-align: left;
+        padding-top: 5px;
+    }
+    .action>button{
+        margin-top: 5px;
+    }
+    main{
+        width: 100%;
+    }
+    #bagianPencarian{
+        width: 100%;
+        align-items: center;
+    }
+}
